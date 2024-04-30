@@ -11,10 +11,12 @@ import java.util.Set;
 /**
  * @author derekyi
  * @date 2020/11/22
+ * 这各类最终会被实例化
  */
 public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory
 		implements ConfigurableListableBeanFactory, BeanDefinitionRegistry {
 
+	// 保存bean定义的map
 	private Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
 
 	@Override

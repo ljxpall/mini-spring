@@ -17,6 +17,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
 
+	// bean的后置处理器集合
 	private final List<BeanPostProcessor> beanPostProcessors = new ArrayList<>();
 
 	@Override
